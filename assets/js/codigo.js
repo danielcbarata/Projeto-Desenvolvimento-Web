@@ -7,18 +7,20 @@ function fetchDataFromAPI() {
         'Authorization': 'Bearer test_71fd9b935ccd00330ca2b58358eb17'
     };
 
-    // Seleciona o elemento HTML onde você deseja exibir os dados da API
-    const resultContainer = document.getElementById('apiResult');
+    // Seleciona os elementos HTML onde você deseja exibir a imagem e o nome do time
+    const escudoElement = document.getElementById('escudo');
+    const nomeElement = document.getElementById('nomeTime');
 
     // Realiza a requisição usando o método fetch
     fetch(apiUrl, { headers })
         .then(response => response.json())
         .then(data => {
-            // Exibe os dados na página HTML
-            resultContainer.innerHTML = JSON.stringify(data, null, 2);
+            // Exibe a imagem do escudo e o nome do time na página
+            escudoElement.src = data.escudo; // Define a imagem do escudo
+            nomeElement.textContent = data.nome; // Define o nome do time
         })
         .catch(error => {
             // Trata erros caso ocorram
-            resultContainer.innerHTML = 'Ocorreu um erro ao buscar os dados da API: ' + error;
+            console.error('Ocorreu um erro ao buscar os dados da API:', error);
         });
 }
