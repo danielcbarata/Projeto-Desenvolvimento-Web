@@ -1,0 +1,29 @@
+.div_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Isso centraliza verticalmente na altura da tela */
+  }
+
+  .div_cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    height: 10vh; /* Isso centraliza verticalmente na altura da tela */
+  }
+
+  .center {
+    text-align: center; /* Centraliza horizontalmente dentro do elemento .center */
+  }
+  
+ .botao_agendamento{
+    background-color: blue;
+  color: white;
+}
+
+.botao_verificacao{
+    background-color: bisque;
+  color: white;
+}
+ 
