@@ -33,7 +33,7 @@
     display: inline-block;
     padding: 10px 20px; /* Define o preenchimento para ajustar o tamanho do botão */
     background-color: bisque; /* Cor de fundo do botão */
-    color: dimgrey; /* Cor do texto */
+    color: black; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado de link padrão */
     border: 1px solid bisque; /* Adiciona uma borda */
     border-radius: 4px; /* Adiciona bordas arredondadas */
@@ -48,6 +48,7 @@
   }
 
   .link_verificacao:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    background-color: #fdc887; /* Cor de fundo ao passar o mouse */
+    color: white;
   }
   
