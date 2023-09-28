@@ -14,7 +14,6 @@
     </div>
     <div class="div_principal">
         <input class="telefone" type="text" placeholder="DIGITE SEU TELEFONE COM DDD">
-        <label for="dia_semana">Escolha um dia da semana:</label>
         <select class="dia_semana" name="dia_semana">
             <option value="selecionar">Selecione um dia</option>
             <option value="segunda">Segunda-feira</option>
@@ -25,16 +24,34 @@
             <option value="sabado">Sábado</option>
             <option value="domingo">Domingo</option>
         </select>
+        <div class="botoes">
+            <div class="div_botao_corte">
+                <p>Corte</p>
+                <p>Duração: 1 hora</p>
+                <p>Preço: R$ 30,00</p>
+                <button class="botao_corte" type="button" onclick="mostrarHorarios('Corte')">Reservar</button>
+            </div>
+            <div class="div_botao_descolorir">
+                <p>Descolorir</p>
+                <p>Duração: 1 hora</p>
+                <p>Preço: R$ 40,00</p>
+                <button class="botao_descolorir" type="button" onclick="mostrarHorarios('Descolorir')">Reservar</button>
+            </div>
+        </div>
+        <div class="div_horarios_disponiveis">
+            <select class="horarios_disponiveis" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro">10:00</option>
+                <option value="segundo">11:00</option>
+                <option value="terceiro">12:00</option>
+                <option value="quarto">14:00</option>
+                <option value="quinto">15:00</option>
+                <option value="sexto">16:00</option>
+                <option value="setimo">17:00</option>
+            </select>
+        </div>
     </div>
 
-    <div class="botoes">
-        <button type="button">Botão 1</button>
-        <button type="button">Botão 2</button>
-        <button type="button">Botão 3</button>
-        <button type="button">Botão 4</button>
-        <button type="button">Botão 5</button>
-        <button type="button">Botão 6</button>
-    </div>
 
     <script src="./assets/js/codigo.js"></script>
 </body>

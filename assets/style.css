@@ -20,6 +20,10 @@
   /* Isso centraliza verticalmente na altura da tela */
 }
 
+.div_horarios_disponiveis{
+  display: none;
+}
+
 .center {  /* Centraliza horizontalmente dentro do elemento .center */
   text-align: center;
  
