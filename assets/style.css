@@ -17,13 +17,13 @@
     text-align: center; /* Centraliza horizontalmente dentro do elemento .center */
   }
   
- .botao_agendamento{
-    background-color: blue;
-  color: white;
+ .link_agendamento{
+    background-color: bisque;
+  color: red;
 }
 
-.botao_verificacao{
+.link_verificacao{
     background-color: bisque;
-  color: white;
+  color: blue;
 }
  
