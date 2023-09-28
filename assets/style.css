@@ -18,12 +18,36 @@
   }
   
  .link_agendamento{
-    background-color: bisque;
-  color: red;
+   display: inline-block;
+    padding: 10px 20px; /* Define o preenchimento para ajustar o tamanho do botão */
+    background-color: bisque; /* Cor de fundo do botão */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado de link padrão */
+    border: 1px solid #fdc887; /* Adiciona uma borda */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
 }
 
 .link_verificacao{
-    background-color: bisque;
-  color: blue;
+    display: inline-block;
+    padding: 10px 20px; /* Define o preenchimento para ajustar o tamanho do botão */
+    background-color: bisque; /* Cor de fundo do botão */
+    color: dimgrey; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado de link padrão */
+    border: 1px solid bisque; /* Adiciona uma borda */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
 }
- 
+
+  
+  .link_agendamento:hover {
+    background-color: #fdc887; /* Cor de fundo ao passar o mouse */
+    color: white;
+  }
+
+  .link_verificacao:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  }
+  
