@@ -1,6 +1,7 @@
 .div_principal {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 60vh;
   /* Isso centraliza verticalmente na altura da tela */
@@ -97,4 +98,8 @@
   background-color: #fdc887;
   /* Cor de fundo ao passar o mouse */
   color: white;
+}
+
+.botoes {
+  display: none;
 }
