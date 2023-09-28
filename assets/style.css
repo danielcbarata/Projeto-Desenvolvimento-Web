@@ -3,11 +3,15 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  flex-direction: column; /* Define a disposição em coluna*/
   height: 60vh;
   /* Isso centraliza verticalmente na altura da tela */
+
+  
+
 }
 
-.div_cabecalho {
+.div_cabecalho { /*Layout do nome da página */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,12 +20,12 @@
   /* Isso centraliza verticalmente na altura da tela */
 }
 
-.center {
+.center {  /* Centraliza horizontalmente dentro do elemento .center */
   text-align: center;
-  /* Centraliza horizontalmente dentro do elemento .center */
+ 
 }
 
-.link_agendamento {
+.link_agendamento { /*Configuração do Botão de Agendar Horário*/
   display: inline-block;
   padding: 10px 20px;
   /* Define o preenchimento para ajustar o tamanho do botão */
@@ -41,7 +45,7 @@
   /* Adiciona uma transição suave na cor de fundo */
 }
 
-.link_verificacao {
+.link_verificacao { /*Configuração do Botão de Verificar Agenda*/
   display: inline-block;
   padding: 10px 20px;
   /* Define o preenchimento para ajustar o tamanho do botão */
@@ -62,19 +66,26 @@
 }
 
 
-.link_agendamento:hover {
+.link_agendamento:hover { /*Mudança de cor no botão de Agendar Horário ao passar o mouse*/
   background-color: #fdc887;
   /* Cor de fundo ao passar o mouse */
   color: white;
 }
 
-.link_verificacao:hover {
+.link_verificacao:hover { /*Mudança de cor no botão de Verificar Agenda ao passar o mouse*/
   background-color: #fdc887;
   /* Cor de fundo ao passar o mouse */
   color: white;
 }
 
-.botao_agendamento {
+.telefone { /*Caixa para que o usuário escreva seu telefone*/
+  /* Estilos para a caixa de texto do telefone */
+  margin-bottom: 10px; /* Adiciona espaço entre os elementos */
+}
+
+.dia_semana { /*Opção de dias da semana para usuário escolher*/
+  font-size: 22px; /* Tamanho do texto */
+  width: 200px; /* Largura da caixa de seleção */
   display: inline-block;
   padding: 10px 20px;
   /* Define o preenchimento para ajustar o tamanho do botão */
@@ -94,7 +105,7 @@
   /* Adiciona uma transição suave na cor de fundo */
 }
 
-.botao_agendamento:hover {
+.dia_semana:hover { /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #fdc887;
   /* Cor de fundo ao passar o mouse */
   color: white;
