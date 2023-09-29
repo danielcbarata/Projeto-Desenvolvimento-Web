@@ -97,7 +97,7 @@
 
 .botoes {
   width: 100%;
-  display: flex;
+  display: none;
   gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
