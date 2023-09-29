@@ -5,7 +5,7 @@ const horariosDisponiveis = document.querySelector('.div_horarios_disponiveis');
 
 select.addEventListener('change', function () {
     if (select.value !== 'selecionar') { // Verifique se o valor não é 'selecionar'
-        buttons.style.display = 'block';
+        buttons.style.display = 'flex';
         horariosDisponiveis.style.display = 'none';
     } else {
         buttons.style.display = 'none';

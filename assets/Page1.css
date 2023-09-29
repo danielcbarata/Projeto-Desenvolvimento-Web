@@ -1,0 +1,117 @@
+.div_principal {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /*Duas colunas com largura automática*/
+  gap: 10px;
+  /*Espaçamento entre as colunas*/
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  /* Define a disposição em coluna*/
+    height: 60vh;
+   /* Substitua pelo caminho real da sua imagem */
+  background-size: cover;
+  /* Isso faz com que a imagem cubra todo o elemento */
+  background-repeat: no-repeat;
+  /* Impede a repetição da imagem */
+  width: 100%;
+}
+
+.titulo {
+  color: #ffde59;
+  /* Cor do texto */
+  -webkit-text-stroke: 2px black;
+  text-shadow: 4px -4px;
+  font-family: 'Ruslan Display', cursive;
+  font-size: 80px;
+  text-align: center;
+
+}
+
+.div_cabecalho {
+  /*Layout do nome da página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  height: 10vh;
+  /* Isso centraliza verticalmente na altura da tela */
+}
+
+.div_horarios_disponiveis {
+  display: none;
+}
+
+.link_agendamento {
+  /*Configuração do Botão de Agendar Horário*/
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  /* Define o preenchimento para ajustar o tamanho do botão */
+  background-color: #ffde59;
+  /* Cor de fundo do botão */
+  color: black;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado de link padrão */
+  border: 1px solid #f8d23c;
+  /* Adiciona uma borda */
+  /* Adiciona uma borda */
+  border-radius: 4px;
+  /* Adiciona bordas arredondadas */
+  cursor: pointer;
+  /* Transforma o cursor em uma mãozinha ao passar o mouse */
+  transition: background-color 0.3s ease;
+  /* Adiciona uma transição suave na cor de fundo */
+  font-family: 'Ruslan Display', cursive;
+}
+
+.link_verificacao {
+  /*Configuração do Botão de Verificar Agenda*/
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  /* Define o preenchimento para ajustar o tamanho do botão */
+  background-color: #ffde59;
+  /* Cor de fundo do botão */
+  color: black;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado de link padrão */
+  border: 1px solid #f8d23c;
+  /* Adiciona uma borda */
+  /* Adiciona uma borda */
+  border-radius: 4px;
+  /* Adiciona bordas arredondadas */
+  cursor: pointer;
+  /* Transforma o cursor em uma mãozinha ao passar o mouse */
+  transition: background-color 0.3s ease;
+  /* Adiciona uma transição suave na cor de fundo */
+  font-family: 'Ruslan Display', cursive;
+}
+
+.link_agendamento:hover {
+  /*Mudança de cor no botão de Agendar Horário ao passar o mouse*/
+  background-color: #f8d23c;
+  /* Cor de fundo ao passar o mouse */
+  color: white;
+}
+
+.link_verificacao:hover {
+  /*Mudança de cor no botão de Verificar Agenda ao passar o mouse*/
+  background-color: #f8d23c;
+  /* Cor de fundo ao passar o mouse */
+  color: white;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  background-position: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-image: url('./Img/backgroung.jpg');
+}
