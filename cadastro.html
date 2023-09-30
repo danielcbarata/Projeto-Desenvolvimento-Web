@@ -24,36 +24,98 @@
             <option value="quinta">Quinta-feira</option>
             <option value="sexta">Sexta-feira</option>
             <option value="sabado">Sábado</option>
-            <option value="domingo">Domingo</option>
         </select>
     </div>
-        <div class="botoes">
-            <div class="div_botao_corte">
-                <p>Corte</p>
-                <p>Duração: 1 hora</p>
-                <p>Preço: R$ 30,00</p>
-                <button class="botao_corte" type="button" onclick="mostrarHorarios('Corte')">Selecionar Horário</button>
-            </div>
-            <div class="div_botao_descolorir">
-                <p>Descolorir</p>
-                <p>Duração: 1 hora</p>
-                <p>Preço: R$ 40,00</p>
-                <button class="botao_descolorir" type="button" onclick="mostrarHorarios('Descolorir')">Selecionar Horário</button>
-            </div>
+    <div class="botoes">
+        <div class="div_botao_corte">
+            <p>Corte</p>
+            <p>Duração: 1 hora</p>
+            <p>Preço: R$ 30,00</p>
+            <button class="botao_corte" type="button" onclick="mostrarHorarios('Corte')">Selecionar Horário</button>
         </div>
-        <div class="div_horarios_disponiveis">
-            <select class="horarios_disponiveis" name="dia_semana">
+        <div class="div_botao_descolorir">
+            <p>Descolorir</p>
+            <p>Duração: 1 hora</p>
+            <p>Preço: R$ 40,00</p>
+            <button class="botao_descolorir" type="button" onclick="mostrarHorarios('Descolorir')">Selecionar
+                Horário</button>
+        </div>
+    </div>
+    <div class="div_horarios_disponiveis">
+        <div class="div_horarios_disponiveis_segunda" style="display: none;">
+            <select class="horarios_disponiveis_segunda" name="dia_semana">
                 <option value="selecionar_horario">Selecione um horário</option>
-                <option value="primeiro">10:00</option>
-                <option value="segundo">11:00</option>
-                <option value="terceiro">12:00</option>
-                <option value="quarto">14:00</option>
-                <option value="quinto">15:00</option>
-                <option value="sexto">16:00</option>
-                <option value="setimo">17:00</option>
+                <option value="primeiro_segunda">10:00</option>
+                <option value="segundo_segunda">11:00</option>
+                <option value="terceiro_segunda">12:00</option>
+                <option value="quarto_segunda">14:00</option>
+                <option value="quinto_segunda">15:00</option>
+                <option value="sexto_segunda">16:00</option>
+                <option value="setimo_segunda">17:00</option>
             </select>
-            <button class="botao_agendar" type="button" onclick="#">Agendar</button>
         </div>
+        <div class="div_horarios_disponiveis_terca" style="display: none;">
+            <select class="horarios_disponiveis_terca" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro_terca">10:00</option>
+                <option value="segundo_terca">11:00</option>
+                <option value="terceiro_terca">12:00</option>
+                <option value="quarto_terca">14:00</option>
+                <option value="quinto_terca">15:00</option>
+                <option value="sexto_terca">16:00</option>
+                <option value="setimo_terca">17:00</option>
+            </select>
+        </div>
+        <div class="div_horarios_disponiveis_quarta" style="display: none;">
+            <select class="horarios_disponiveis_quarta" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro_quarta">10:00</option>
+                <option value="segundo_quarta">11:00</option>
+                <option value="terceiro_quarta">12:00</option>
+                <option value="quarto_quarta">14:00</option>
+                <option value="quinto_quarta">15:00</option>
+                <option value="sexto_quarta">16:00</option>
+                <option value="setimo_quarta">17:00</option>
+            </select>
+        </div>
+        <div class="div_horarios_disponiveis_quinta" style="display: none;">
+            <select class="horarios_disponiveis_quinta" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro_quinta">10:00</option>
+                <option value="segundo_quinta">11:00</option>
+                <option value="terceiro_quinta">12:00</option>
+                <option value="quarto_quinta">14:00</option>
+                <option value="quinto_quinta">15:00</option>
+                <option value="sexto_quinta">16:00</option>
+                <option value="setimo_quinta">17:00</option>
+            </select>
+        </div>
+        <div class="div_horarios_disponiveis_sexta" style="display: none;">
+            <select class="horarios_disponiveis_sexta" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro_sexta">10:00</option>
+                <option value="segundo_sexta">11:00</option>
+                <option value="terceiro_sexta">12:00</option>
+                <option value="quarto_sexta">14:00</option>
+                <option value="quinto_sexta">15:00</option>
+                <option value="sexto_sexta">16:00</option>
+                <option value="setimo_sexta">17:00</option>
+            </select>
+        </div>
+        <div class="div_horarios_disponiveis_sabado" style="display: none;">
+            <select class="horarios_disponiveis_sabado" name="dia_semana">
+                <option value="selecionar_horario">Selecione um horário</option>
+                <option value="primeiro_sabado">10:00</option>
+                <option value="segundo_sabado">11:00</option>
+                <option value="terceiro_sabado">12:00</option>
+                <option value="quarto_sabado">14:00</option>
+                <option value="quinto_sabado">15:00</option>
+                <option value="sexto_sabado">16:00</option>
+                <option value="setimo_sabado">17:00</option>
+            </select>
+        </div>
+        <button class="botao_agendar" type="button" style="display: none;">Agendar</button>
+    </div>
     </div>
 
 

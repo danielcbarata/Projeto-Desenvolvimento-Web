@@ -41,10 +41,6 @@
   /* Isso centraliza verticalmente na altura da tela */
 }
 
-.div_horarios_disponiveis {
-  display: none;
-}
-
 .telefone {
   /*Caixa para que o usuário escreva seu telefone*/
   /* Estilos para a caixa de texto do telefone */

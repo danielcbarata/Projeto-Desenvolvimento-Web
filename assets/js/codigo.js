@@ -1,41 +1,60 @@
-const select = document.querySelector('.dia_semana'); // Correção aqui, use querySelector em vez de getElementsByClassName
+const select = document.querySelector('.dia_semana'); 
 const buttons = document.querySelector('.botoes');
-const horariosDisponiveis = document.querySelector('.div_horarios_disponiveis');
-
+const botaoAgendar = document.querySelector('.botao_agendar');
+let horariosDisponiveis;
 
 select.addEventListener('change', function () {
-    if (select.value !== 'selecionar') { // Verifique se o valor não é 'selecionar'
+    if (select.value !== 'selecionar') { 
         buttons.style.display = 'flex';
         horariosDisponiveis.style.display = 'none';
+        botaoAgendar.style.display = 'none';
     } else {
         buttons.style.display = 'none';
         horariosDisponiveis.style.display = 'none';
+        botaoAgendar.style.display = 'none';
     }
 });
 
 function mostrarHorarios(servico) {
-    const horariosDisponiveis = document.querySelector('.div_horarios_disponiveis');
-    const horariosSelect = document.querySelector('.horarios_disponiveis');
+    const diaSelecionado = select.value;
+    const horariosSelect = document.querySelector(`.horarios_disponiveis_${diaSelecionado.toLowerCase()}`);
+    horariosDisponiveis = document.querySelector(`.div_horarios_disponiveis_${diaSelecionado.toLowerCase()}`);
+    const options = horariosSelect.querySelectorAll('option');
+    
+    const chave = `${diaSelecionado.toLowerCase()}_horarioAgendado`;
+    const horarioAgendado = localStorage.getItem(chave);
 
-
-    let horarios = [];
-
-    if (servico === 'Corte') {
-        horarios = ['10:00', '11:00', '12:00'];
-    } else if (servico === 'Descolorir') {
-        horarios = ['14:00', '15:00', '16:00'];
-    }
-    horariosSelect.innerHTML = '';
-
-    // Adicione as opções de horários ao select
-    for (const horario of horarios) {
-        const option = document.createElement('option');
-        option.value = horario;
-        option.textContent = horario;
-        horariosSelect.appendChild(option);
-    }
-
-    // Exiba a div de horários disponíveis
+    options.forEach((option) => {
+        if (option.value !== 'selecionar_horario' && (horarioAgendado && option.value === horarioAgendado)) {
+            option.remove();
+        }
+    });
+    
     horariosDisponiveis.style.display = 'block';
+    botaoAgendar.style.display = 'block';
     buttons.style.display = 'none';
 }
+
+botaoAgendar.addEventListener('click', function () {
+    const diaSelecionado = select.value;
+    const horarioSelecionado = document.querySelector(`.horarios_disponiveis_${diaSelecionado.toLowerCase()}`).value;
+
+    if (horarioSelecionado !== 'selecionar_horario') {
+        const chave = `${diaSelecionado.toLowerCase()}_horarioAgendado`;
+        localStorage.setItem(chave, horarioSelecionado);
+        
+        alert('Horário agendado com sucesso!');
+
+        const horarioAgendado = localStorage.getItem(chave);
+        if (horarioAgendado !== null && horarioAgendado !== undefined) {
+            console.log('Horário agendado:', horarioAgendado);
+        } else {
+            console.log('Nenhum horário agendado.');
+        }
+
+        window.location.reload();
+        
+    } else {
+        alert('Por favor, selecione um horário válido antes de agendar.');
+    }
+});
