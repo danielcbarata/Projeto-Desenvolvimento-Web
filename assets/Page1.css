@@ -9,8 +9,8 @@
   align-items: center;
   flex-direction: column;
   /* Define a disposição em coluna*/
-    height: 60vh;
-   /* Substitua pelo caminho real da sua imagem */
+  height: 60vh;
+  /* Substitua pelo caminho real da sua imagem */
   background-size: cover;
   /* Isso faz com que a imagem cubra todo o elemento */
   background-repeat: no-repeat;
@@ -26,7 +26,6 @@
   font-family: 'Ruslan Display', cursive;
   font-size: 80px;
   text-align: center;
-
 }
 
 .div_cabecalho {
@@ -43,7 +42,8 @@
   display: none;
 }
 
-.link_agendamento {
+.link_agendamento,
+.link_verificacao {
   /*Configuração do Botão de Agendar Horário*/
   display: inline-block;
   font-size: 20px;
@@ -67,42 +67,13 @@
   font-family: 'Ruslan Display', cursive;
 }
 
-.link_verificacao {
-  /*Configuração do Botão de Verificar Agenda*/
-  display: inline-block;
-  padding: 15px;
-  font-size: 20px;
-  /* Define o preenchimento para ajustar o tamanho do botão */
-  background-color: #ffde59;
-  /* Cor de fundo do botão */
-  color: black;
-  /* Cor do texto */
-  text-decoration: none;
-  /* Remove sublinhado de link padrão */
-  border: 1px solid #f8d23c;
-  /* Adiciona uma borda */
-  /* Adiciona uma borda */
-  border-radius: 4px;
-  /* Adiciona bordas arredondadas */
-  cursor: pointer;
-  /* Transforma o cursor em uma mãozinha ao passar o mouse */
-  transition: background-color 0.3s ease;
-  /* Adiciona uma transição suave na cor de fundo */
-  font-family: 'Ruslan Display', cursive;
-}
-
-.link_agendamento:hover {
+.link_agendamento:hover,
+.link_verificacao:hover {
   /*Mudança de cor no botão de Agendar Horário ao passar o mouse*/
   background-color: #f8d23c;
+  font-size: 24px;
   /* Cor de fundo ao passar o mouse */
-  color: white;
-}
-
-.link_verificacao:hover {
-  /*Mudança de cor no botão de Verificar Agenda ao passar o mouse*/
-  background-color: #f8d23c;
-  /* Cor de fundo ao passar o mouse */
-  color: white;
+  color: black;
 }
 
 body {

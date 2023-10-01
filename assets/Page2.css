@@ -10,8 +10,6 @@
   flex-direction: column;
   /* Define a disposição em coluna*/
   height: 10vh;
-  /* Isso centraliza verticalmente na altura da tela */
-
   /* Substitua pelo caminho real da sua imagem */
   background-size: cover;
   /* Isso faz com que a imagem cubra todo o elemento */
@@ -41,8 +39,7 @@
   /* Isso centraliza verticalmente na altura da tela */
 }
 
-.telefone {
-  /*Caixa para que o usuário escreva seu telefone*/
+.telefone { /*Caixa para que o usuário escreva seu telefone*/
   /* Estilos para a caixa de texto do telefone */
   margin-bottom: 0px;
   /* Adiciona espaço entre os elementos */
@@ -61,7 +58,7 @@
   /*Opção de dias da semana para usuário escolher*/
   font-size: 17px;
   /* Tamanho do texto */
-  width: 225px;
+  width: 262px;
   /* Largura da caixa de seleção */
   display: inline-block;
   padding: 15px;
@@ -86,9 +83,11 @@
 .dia_semana:hover {
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
+  font-size: 21px;
   /* Cor de fundo ao passar o mouse */
   color: black;
   font-family: 'Ruslan Display', cursive;
+
 }
 
 .botoes {
@@ -131,20 +130,14 @@
 
 }
 
-.botao_corte:hover {
+.botao_corte:hover,
+.botao_descolorir:hover{
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
   /* Cor de fundo ao passar o mouse */
-  color: white;
+  color: black;
   font-family: 'Ruslan Display', cursive;
-}
-
-.botao_descolorir:hover {
-  /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
-  background-color: #f8d23c;
-  /* Cor de fundo ao passar o mouse */
-  color: white; /*Cor interna do botão na caixa*/
-  font-family: 'Ruslan Display', cursive;
+  font-size: 21px;
 }
 
 .div_botao_corte,
@@ -176,7 +169,7 @@ body {
   font-family: 'Ruslan Display', cursive;
   font-size: 25px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 10px;
   margin-top: 30px;
   padding: 30px;
@@ -187,40 +180,6 @@ body {
   font-size: 17px;
   /* Tamanho do texto */
   width: 200px;
-  /* Largura da caixa de seleção */
-  display: inline-block;
-  padding: 10px 20px;
-  /*Define o preenchimento para ajustar o tamanho do botão */
-  background-color: #ffde59;
-  /* Cor de fundo do botão */
-  color: black;
-  /* Cor do texto */
-  text-decoration: none;
-  /* Remove sublinhado de link padrão */
-  border: 1px solid #f8d23c;
-  /* Adiciona uma borda */
-  border-radius: 4px;
-  /* Adiciona bordas arredondadas */
-  cursor: pointer;
-  /*Cursor com mãozinha*/
-  transition: background-color 0.3s ease;
-  /* Adiciona uma transição suave na cor de fundo */
-  font-family: 'Ruslan Display', cursive;
-}
-
-.botao_agendar:hover{
-  /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
-  background-color: #f8d23c;
-  /* Cor de fundo ao passar o mouse */
-  color: white;
-  font-family: 'Ruslan Display', cursive;
-}
-
-.horarios_disponiveis_segunda{
-  /*Opção de dias da semana para usuário escolher*/
-  font-size: 17px;
-  /* Tamanho do texto */
-  width: 270px;
   /* Largura da caixa de seleção */
   display: inline-block;
   padding: 15px;
@@ -242,10 +201,57 @@ body {
   font-family: 'Ruslan Display', cursive;
 }
 
-.horarios_disponiveis_segunda:hover{
+.botao_agendar:hover{
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
+  font-size: 21px;
   /* Cor de fundo ao passar o mouse */
   color: black;
   font-family: 'Ruslan Display', cursive;
 }
+
+.horarios_disponiveis_segunda, 
+.horarios_disponiveis_terca,
+.horarios_disponiveis_quarta,
+.horarios_disponiveis_quinta,
+.horarios_disponiveis_sexta,
+.horarios_disponiveis_sabado{
+  /*Opção de dias da semana para usuário escolher*/
+  font-size: 17px;
+  /* Tamanho do texto */
+  width: 322px;
+  /* Largura da caixa de seleção */
+  display: inline-block;
+  padding: 15px;
+  /*Define o preenchimento para ajustar o tamanho do botão */
+  background-color: #ffde59;
+  /* Cor de fundo do botão */
+  color: black;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado de link padrão */
+  border: 1px solid #f8d23c;
+  /* Adiciona uma borda */
+  border-radius: 4px;
+  /* Adiciona bordas arredondadas */
+  cursor: pointer;
+  /*Cursor com mãozinha*/
+  transition: background-color 0.3s ease;
+  /* Adiciona uma transição suave na cor de fundo */
+  font-family: 'Ruslan Display', cursive;
+}
+
+.horarios_disponiveis_segunda:hover,
+.horarios_disponiveis_terca:hover,
+.horarios_disponiveis_quarta:hover,
+.horarios_disponiveis_quinta:hover,
+.horarios_disponiveis_sexta:hover,
+.horarios_disponiveis_sabado:hover{
+  /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
+  background-color: #f8d23c;
+  font-size: 21px;
+  /* Cor de fundo ao passar o mouse */
+  color: black;
+  font-family: 'Ruslan Display', cursive;
+}
+
