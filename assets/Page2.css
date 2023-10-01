@@ -87,7 +87,7 @@
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
   /* Cor de fundo ao passar o mouse */
-  color: white;
+  color: black;
   font-family: 'Ruslan Display', cursive;
 }
 
@@ -213,5 +213,39 @@ body {
   background-color: #f8d23c;
   /* Cor de fundo ao passar o mouse */
   color: white;
+  font-family: 'Ruslan Display', cursive;
+}
+
+.horarios_disponiveis_segunda{
+  /*Opção de dias da semana para usuário escolher*/
+  font-size: 17px;
+  /* Tamanho do texto */
+  width: 270px;
+  /* Largura da caixa de seleção */
+  display: inline-block;
+  padding: 15px;
+  /*Define o preenchimento para ajustar o tamanho do botão */
+  background-color: #ffde59;
+  /* Cor de fundo do botão */
+  color: black;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado de link padrão */
+  border: 1px solid #f8d23c;
+  /* Adiciona uma borda */
+  border-radius: 4px;
+  /* Adiciona bordas arredondadas */
+  cursor: pointer;
+  /*Cursor com mãozinha*/
+  transition: background-color 0.3s ease;
+  /* Adiciona uma transição suave na cor de fundo */
+  font-family: 'Ruslan Display', cursive;
+}
+
+.horarios_disponiveis_segunda:hover{
+  /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
+  background-color: #f8d23c;
+  /* Cor de fundo ao passar o mouse */
+  color: black;
   font-family: 'Ruslan Display', cursive;
 }
