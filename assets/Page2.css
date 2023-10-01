@@ -171,3 +171,47 @@ body {
   letter-spacing: 1px;
   background-image: url('./Img/backgroung.jpg');
 }
+
+.div_horarios_disponiveis{
+  font-family: 'Ruslan Display', cursive;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 30px;
+  align-items: center;
+}
+
+.botao_agendar{
+  font-size: 17px;
+  /* Tamanho do texto */
+  width: 200px;
+  /* Largura da caixa de seleção */
+  display: inline-block;
+  padding: 10px 20px;
+  /*Define o preenchimento para ajustar o tamanho do botão */
+  background-color: #ffde59;
+  /* Cor de fundo do botão */
+  color: black;
+  /* Cor do texto */
+  text-decoration: none;
+  /* Remove sublinhado de link padrão */
+  border: 1px solid #f8d23c;
+  /* Adiciona uma borda */
+  border-radius: 4px;
+  /* Adiciona bordas arredondadas */
+  cursor: pointer;
+  /*Cursor com mãozinha*/
+  transition: background-color 0.3s ease;
+  /* Adiciona uma transição suave na cor de fundo */
+  font-family: 'Ruslan Display', cursive;
+}
+
+.botao_agendar:hover{
+  /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
+  background-color: #f8d23c;
+  /* Cor de fundo ao passar o mouse */
+  color: white;
+  font-family: 'Ruslan Display', cursive;
+}
