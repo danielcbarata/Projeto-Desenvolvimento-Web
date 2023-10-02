@@ -267,7 +267,7 @@ body {
 @media screen and (max-width: 768px) {
   body{
     height: 120vh;
-    background-image: url(./Img/backgroung.jpg);
+    background-image: url('./Img/backgroung.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
