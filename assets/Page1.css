@@ -1,83 +1,83 @@
-.div_principal {
+.div_principal { /*Classe que engloba os links de Agendamento e Verificação*/
   display: grid;
   grid-template-columns: repeat(2, auto);
-  /*Duas colunas com largura automática*/
+  /*Disposição do layout em colunas*/
   gap: 10px;
-  /*Espaçamento entre as colunas*/
+  /*Gap entre as colunas*/
   justify-content: center;
+  /*Centraliza os componentes da classe*/
   flex-direction: column;
+  /*Formatação em colunas*/
   align-items: center;
+  /*Alinhamento dos componentes no centro da página*/
   flex-direction: column;
-  /* Define a disposição em coluna*/
+  /*Disposição do layout em colunas*/
   height: 60vh;
-  /* Substitua pelo caminho real da sua imagem */
+  /*Altura da página*/
   background-size: cover;
-  /* Isso faz com que a imagem cubra todo o elemento */
+  /*Imagem de fundo cobrindo toda a página*/
   background-repeat: no-repeat;
-  /* Impede a repetição da imagem */
+  /*Imagem única sem repetir*/
   width: 100%;
+  /*Ocupar 100% da altura estipulada*/
 }
 
-.titulo {
+.titulo { /*Configuração do layout do título*/
   color: #ffde59;
-  /* Cor do texto */
+  /*Cor das letras*/
   -webkit-text-stroke: 2px black;
+  /*Borda no título*/
   text-shadow: 4px -4px;
+  /*Sombra para impressão 3d*/
   font-family: 'Ruslan Display', cursive;
+  /*Alteração na fonte*/
   font-size: 80px;
+  /*Tamanho da letra*/
   text-align: center;
+  /*Alinhamento do texto no centro da página*/
 }
 
-.div_cabecalho {
-  /*Layout do nome da página */
+.div_cabecalho { /*Classe que armazena o título*/
   display: flex;
+  /*Permite que o texto se redimensione de acordo com tamanho da página e se agrupa em blocos*/
   justify-content: center;
   align-items: center;
   padding-top: 200px;
+  /*Espaço "pra dentro" em relação ao topo da página*/
   height: 10vh;
-  /* Isso centraliza verticalmente na altura da tela */
-  
-}
-
-.div_horarios_disponiveis {
-  display: none;
 }
 
 .link_agendamento,
-.link_verificacao {
-  /*Configuração do Botão de Agendar Horário*/
+.link_verificacao { /*Layout dos botões de agendamento e verificação de horário*/
   display: inline-block;
+  /*Tranforma os links em "botões"*/
   font-size: 20px;
   padding: 15px;
-  /* Define o preenchimento para ajustar o tamanho do botão */
   background-color: #ffde59;
-  /* Cor de fundo do botão */
+  /*Cor de preenchimento dos botões*/
   color: black;
-  /* Cor do texto */
+  /*Cor da letra*/
   text-decoration: none;
-  /* Remove sublinhado de link padrão */
+  /*Remoção do aspecto de link (sublinhado)*/
   border: 1px solid #f8d23c;
-  /* Adiciona uma borda */
-  /* Adiciona uma borda */
+  /*Adiciona uma borda*/
   border-radius: 4px;
-  /* Adiciona bordas arredondadas */
+  /*Bordas arredondadas*/
   cursor: pointer;
-  /* Transforma o cursor em uma mãozinha ao passar o mouse */
+  /*Cursor como mãozinha*/
   transition: background-color 0.3s ease;
-  /* Adiciona uma transição suave na cor de fundo */
+  /*Transição de cor de preenchimento do botão*/
   font-family: 'Ruslan Display', cursive;
 }
 
 .link_agendamento:hover,
-.link_verificacao:hover {
-  /*Mudança de cor no botão de Agendar Horário ao passar o mouse*/
+.link_verificacao:hover { /*Animação para destacar a opção dos botões*/
   background-color: #f8d23c;
   font-size: 24px;
-  /* Cor de fundo ao passar o mouse */
   color: black;
 }
 
-body {
+body { /*Configurações gerais que vão englobar todas as classes*/
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

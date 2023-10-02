@@ -3,7 +3,7 @@ const buttons = document.querySelector('.botoes');
 const botaoAgendar = document.querySelector('.botao_agendar');
 let horariosDisponiveis;
 
-select.addEventListener('change', function () {
+select.addEventListener('change', function () { 
     if (select.value !== 'selecionar') { 
         buttons.style.display = 'flex';
         horariosDisponiveis.style.display = 'none';
