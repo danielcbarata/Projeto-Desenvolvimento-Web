@@ -263,3 +263,31 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+  body{
+    height: 120vh;
+  }
+  .titulo {
+    font-size: 50px;
+  }
+
+  .horarios_disponiveis_segunda,
+  .horarios_disponiveis_terca,
+  .horarios_disponiveis_quarta,
+  .horarios_disponiveis_quinta,
+  .horarios_disponiveis_sexta,
+  .horarios_disponiveis_sabado {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .horarios_disponiveis_segunda:hover,
+  .horarios_disponiveis_terca:hover,
+  .horarios_disponiveis_quarta:hover,
+  .horarios_disponiveis_quinta:hover,
+  .horarios_disponiveis_sexta:hover,
+  .horarios_disponiveis_sabado:hover {
+    font-size: 17px;
+  }
+
+}
