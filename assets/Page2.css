@@ -267,6 +267,7 @@ body {
 @media screen and (max-width: 768px) {
   body{
     height: 120vh;
+    width: 100%;
   }
   .titulo {
     font-size: 50px;
