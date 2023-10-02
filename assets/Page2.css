@@ -39,7 +39,8 @@
   /* Isso centraliza verticalmente na altura da tela */
 }
 
-.telefone { /*Caixa para que o usuário escreva seu telefone*/
+.telefone {
+  /*Caixa para que o usuário escreva seu telefone*/
   /* Estilos para a caixa de texto do telefone */
   margin-bottom: 0px;
   /* Adiciona espaço entre os elementos */
@@ -99,7 +100,7 @@
   align-items: center;
 }
 
-.botoes p{
+.botoes p {
   -webkit-text-stroke: 1px black;
 }
 
@@ -131,7 +132,7 @@
 }
 
 .botao_corte:hover,
-.botao_descolorir:hover{
+.botao_descolorir:hover {
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
   /* Cor de fundo ao passar o mouse */
@@ -141,7 +142,8 @@
 }
 
 .div_botao_corte,
-.div_botao_descolorir { /*Borda do Botão Selecionar Horário*/
+.div_botao_descolorir {
+  /*Borda do Botão Selecionar Horário*/
   color: white;
   font-family: 'Ruslan Display', cursive;
   font-size: 25px;
@@ -165,7 +167,7 @@ body {
   background-image: url('./Img/backgroung.jpg');
 }
 
-.div_horarios_disponiveis{
+.div_horarios_disponiveis {
   font-family: 'Ruslan Display', cursive;
   font-size: 25px;
   display: flex;
@@ -176,7 +178,7 @@ body {
   align-items: center;
 }
 
-.botao_agendar{
+.botao_agendar {
   font-size: 17px;
   /* Tamanho do texto */
   width: 200px;
@@ -201,7 +203,7 @@ body {
   font-family: 'Ruslan Display', cursive;
 }
 
-.botao_agendar:hover{
+.botao_agendar:hover {
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
   font-size: 21px;
@@ -210,12 +212,12 @@ body {
   font-family: 'Ruslan Display', cursive;
 }
 
-.horarios_disponiveis_segunda, 
+.horarios_disponiveis_segunda,
 .horarios_disponiveis_terca,
 .horarios_disponiveis_quarta,
 .horarios_disponiveis_quinta,
 .horarios_disponiveis_sexta,
-.horarios_disponiveis_sabado{
+.horarios_disponiveis_sabado {
   /*Opção de dias da semana para usuário escolher*/
   font-size: 17px;
   /* Tamanho do texto */
@@ -246,7 +248,7 @@ body {
 .horarios_disponiveis_quarta:hover,
 .horarios_disponiveis_quinta:hover,
 .horarios_disponiveis_sexta:hover,
-.horarios_disponiveis_sabado:hover{
+.horarios_disponiveis_sabado:hover {
   /*Mudança de cor no botão de Dia da Semana ao passar o mouse*/
   background-color: #f8d23c;
   font-size: 21px;
@@ -255,3 +257,31 @@ body {
   font-family: 'Ruslan Display', cursive;
 }
 
+@media screen and (max-width: 768px) {
+  body{
+    height: 120vh;
+  }
+  .titulo {
+    font-size: 50px;
+  }
+
+  .horarios_disponiveis_segunda,
+  .horarios_disponiveis_terca,
+  .horarios_disponiveis_quarta,
+  .horarios_disponiveis_quinta,
+  .horarios_disponiveis_sexta,
+  .horarios_disponiveis_sabado {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .horarios_disponiveis_segunda:hover,
+  .horarios_disponiveis_terca:hover,
+  .horarios_disponiveis_quarta:hover,
+  .horarios_disponiveis_quinta:hover,
+  .horarios_disponiveis_sexta:hover,
+  .horarios_disponiveis_sabado:hover {
+    font-size: 17px;
+  }
+
+}
