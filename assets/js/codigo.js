@@ -1,9 +1,10 @@
+//Definição das variaveis
 const select = document.querySelector('.dia_semana'); 
 const buttons = document.querySelector('.botoes');
 const botaoAgendar = document.querySelector('.botao_agendar');
 let horariosDisponiveis;
 
-select.addEventListener('change', function () { 
+select.addEventListener('change', function () {
     if (select.value !== 'selecionar') { 
         buttons.style.display = 'flex';
         horariosDisponiveis.style.display = 'none';
@@ -15,6 +16,7 @@ select.addEventListener('change', function () {
     }
 });
 
+//Função feita para exibir os horários quando um serviço for escolhido. Primeiro é recuperado qual o dia da semana o usuário escolheu, para ser exibido somente os horários disponíveis daquele determinado dia. É feito um filtro para retirar da exibição horários que já tenham sido agendados.
 function mostrarHorarios(servico) {
     const diaSelecionado = select.value;
     const horariosSelect = document.querySelector(`.horarios_disponiveis_${diaSelecionado.toLowerCase()}`);
@@ -35,6 +37,7 @@ function mostrarHorarios(servico) {
     buttons.style.display = 'none';
 }
 
+//Evento para verificar o clique do botão agendar. Caso o usuário escolha um horário e tente agendar, é exibido a mensagem que o horário foi agendado com sucesso e armazenado em um storage local JS. Caso não tenha selecionado nenhum horário e tente agendar, é exibido mensagem de erro.
 botaoAgendar.addEventListener('click', function () {
     const diaSelecionado = select.value;
     const horarioSelecionado = document.querySelector(`.horarios_disponiveis_${diaSelecionado.toLowerCase()}`).value;
